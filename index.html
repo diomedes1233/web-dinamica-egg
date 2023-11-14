@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi primera web</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <a class="corazon" href="index.html"><i class="fa-solid fa-heart"></i></a>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Trabajo</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Acerca de mi</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="secion-principal">
+       <!--      <div class="contenido-en-movimiento">
+                <h1>ESTA ES UNA PAGINA EN MOVIMIENTO CON HTML Y CSS</h1>
+                <h3>ESTA ES UNA PAGINA EN MOVIMIENTO CON HTML Y CSS</h3>
+            </div> -->
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2 >Acerca de mi</h2>
+                    <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí</p>
+                    <p class="parrafo2">Me llamo Tere, nací en Buenos Aires y vivo en Caballito. Me gusta el helado y salir a pasear en
+                        días de sol. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo
+                        que hacen.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img class="img-persona" src="./img/persona_foto.jpg" alt="imagen foto hombre">
+                </div>
+            </section>
+
+            <div class="contenedor">
+                <div class="tarjeta">
+                    <div class="cara frente">
+                        <!-- Coloca aquí tu imagen -->
+                        <img class="img-frente" src="./img/robot.jpg" alt="Imagen">
+                    </div>
+                    <div class="cara atras">
+                        <!-- Coloca aquí tu texto -->
+                        <p class="texto-atras"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sed, vel expedita maxime saepe reiciendis mollitia numquam a, ratione, esse molestias id! Aut, velit illum molestiae quam quis unde nobis? </p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="container-targetas">
+                <div class="container-img">
+                    <img class="item-carts-img1" src="./img/telefono-inteligente.jpg" alt="telefono inteligente">
+                    <p>
+                        Un smartphone combina las funciones de un teléfono y una computadora. Con sistemas como Android
+                        o iOS, permite navegar en Internet, usar aplicaciones y tomar fotos. Gracias a su conectividad y
+                        versatilidad, se ha vuelto esencial en la comunicación y el entretenimiento diario.</p>
+                </div>
+                <div class="container-img">
+                    <img class="item-carts-img" src="./img/reloj-inteligente.jpg" alt="reloj inteligente">
+                    <p>Un reloj inteligente, o smartwatch, es un dispositivo wearable que va en la muñeca y ofrece
+                        funciones más allá de solo dar la hora. Se sincroniza con smartphones para recibir
+                        notificaciones, rastrear actividad física, reproducir música y más. Incorpora sensores como
+                        pulsómetros y GPS, convirtiéndose en una herramienta versátil para la salud y comunicación
+                        diaria.</p>
+                </div>
+                <div class="container-img">
+                    <img class="item-carts-img" src="./img/gafas-realidad-virtual.jpg" alt="gafas realidad virtua">
+                    <p>
+                        Las gafas de realidad virtual (VR) son dispositivos que sumergen al usuario en entornos
+                        digitales inmersivos. A través de pantallas y sensores, replican la sensación de estar en otro
+                        mundo o escenario. Se utilizan para videojuegos, simulaciones, educación y otras experiencias
+                        interactivas, ofreciendo una inmersión profunda y alterando la percepción del entorno real.</p>
+                </div>
+            </section>
+
+
+            <!-- FORMULARIO -->
+            <section class="container-formulario">
+            <div class="form-header">
+                <h2>Contactos</h2>
+                <p><em>¡Esperamos tu consulta!</em></p>
+        
+                <form action="" method="get" class="formulario" id="form">
+        
+                    <div class="form-row">
+                        <label for="nombre">Nombre *</label>
+                        <input id="nombre" name="nombre" type="text" required>
+                        <p class="alertas" id="alertas"></p>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email *</label>
+                        <input id="email" name="email" type="email" placeholder="Ingrasa tu Email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje">
+                    </textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" id="submit">Enviar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+        
+
+        </main>
+    </div>
+    <footer>
+        <h4>Autor: Edwin Bernal</h4>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
